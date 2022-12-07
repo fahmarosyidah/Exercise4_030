@@ -19,6 +19,11 @@ namespace Exercise4
         int[] osyi = new int[48];
         int top;
 
+        public Stacks()
+        {
+            top = -1;
+        }
+
     }
     class Program
     {
