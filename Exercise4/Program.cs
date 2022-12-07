@@ -13,6 +13,13 @@ namespace Exercise4
             next = n;
         }
     }
+
+    class Stacks
+    {
+        int[] osyi = new int[48];
+        int top;
+
+    }
     class Program
     {
         static void Main(string[] args)
