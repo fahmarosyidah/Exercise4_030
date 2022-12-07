@@ -24,6 +24,14 @@ namespace Exercise4
             top = -1;
         }
 
+        bool empty()
+        {
+            if (top == -1)
+                return (true);
+            else
+                return (false);
+        }
+
     }
     class Program
     {
