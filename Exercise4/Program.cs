@@ -2,22 +2,12 @@
 
 namespace Exercise4
 {
-    class Node
-    {
-        public int info;
-        public Node next;
-
-        public Node(int i, Node n)
-        {
-            info = i;
-            next = n;
-        }
-    }
 
     class Stacks
     {
-        char[] osyi = new char[48];
+        int[] osyi = new int[48];
         int top;
+        int n;
 
         public Stacks()
         {
@@ -34,28 +24,25 @@ namespace Exercise4
 
         public void push(int element)
         {
-
+            top += 1;
         }
 
         public void pop()
         {
-
+            top -= 1;
         }
 
         public void display()
         {
-            int tmp;
 
             if (empty()) //If stack is empty
                 Console.WriteLine("\nStack Empty");
             else
             {
-                //Traverse the list from begginning till end
-                for (tmp = top; tmp != null; tmp = tmp.next)
+                for (int i = 0; i < top; i++)
                 {
-                    Console.WriteLine(tmp.info);
+                    Console.WriteLine(osyi[i]);
                 }
-                Console.WriteLine();
             }
         }
 
