@@ -22,6 +22,20 @@ namespace Exercise4
                 return (false);
         }
 
+        public void input()
+        {
+            while (true)
+            {
+                Console.Write("Masukkan banyaknya elemen pada array: ");
+                string s = Console.ReadLine();
+                n = Int32.Parse(s);
+                if (n <= 48)
+                    break;
+                else
+                    Console.WriteLine("\nArray dapat mempunyai maksimal 48 elemen.\n");
+            }
+        }
+
         public void push(int element)
         {
             top += 1;
@@ -39,7 +53,7 @@ namespace Exercise4
                 Console.WriteLine("\nStack Empty");
             else
             {
-                for (int i = 0; i < top; i++)
+                for (int i = 0; i < n; i++)
                 {
                     Console.WriteLine(osyi[i]);
                 }
@@ -64,6 +78,7 @@ namespace Exercise4
                 switch (ch)
                 {
                     case '1':
+                        s.input();
                         Console.Write("\nEnter a number: ");
                         int num = Convert.ToInt32(Console.ReadLine());
                         s.push(num);
