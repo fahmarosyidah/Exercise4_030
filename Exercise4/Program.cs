@@ -37,6 +37,9 @@ namespace Exercise4
 
         }
 
+        public void pop()
+
+
         
 
         static void Main(string[] args)
