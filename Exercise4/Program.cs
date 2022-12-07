@@ -16,7 +16,7 @@ namespace Exercise4
 
     class Stacks
     {
-        int[] osyi = new int[48];
+        char[] osyi = new char[48];
         int top;
 
         public Stacks()
@@ -32,12 +32,16 @@ namespace Exercise4
                 return (false);
         }
 
-    }
-    class Program
-    {
+        public void push(int element)
+        {
+
+        }
+
+        
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
         }
     }
 }
